@@ -1,0 +1,111 @@
+:root {
+    --pink: #FF8FAB;
+    --pink-dark: #F06292;
+    --pink-soft: #FFD6E0;
+    --cream: #FFF5F7;
+    --mint: #BDEFDC;
+    --teks: #4A3F55;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--teks);
+    padding-top: 56px;
+}
+
+section {
+    scroll-margin-top: 56px;
+}
+
+/* Warna */
+.bg-pink {
+    background-color: var(--pink) !important;
+    color: #fff;
+}
+
+.bg-pink .navbar-brand,
+.bg-pink .nav-link {
+    color: #fff;
+    font-weight: 600;
+}
+
+.bg-pink .nav-link:hover {
+    color: var(--teks);
+}
+
+.bg-pink-soft {
+    background-color: var(--pink-soft) !important;
+}
+
+.bg-cream {
+    background-color: var(--cream) !important;
+}
+
+.bg-mint {
+    background-color: var(--mint) !important;
+}
+
+/* Tombol */
+.btn-pink {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-pink:hover {
+    background-color: var(--pink-dark);
+    border-color: var(--pink-dark);
+    color: #fff;
+}
+
+.btn-outline-pink {
+    border: 2px solid var(--pink);
+    color: var(--pink-dark);
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.btn-outline-pink:hover {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+/* Judul */
+.judul {
+    font-weight: 700;
+}
+
+/* Foto profil */
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--pink);
+    border: 6px solid #fff;
+    box-shadow: 0 8px 20px rgba(255, 143, 171, 0.5);
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Kartu */
+.kartu {
+    border: 2px solid var(--pink-soft);
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+}
